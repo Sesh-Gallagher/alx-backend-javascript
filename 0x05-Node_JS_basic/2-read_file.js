@@ -33,10 +33,10 @@ const countstudents = (filePath) => {
     studentgroups[field].push(Object.fromEntries(studententries));
   }
 
-  const total_students = Object
+  const totalStudents = Object
     .values(studentgroups)
     .reduce((pre, cur) => (pre || []).length + cur.length);
-  console.log(`Number of students: ${total_students}`);
+  console.log(`Number of students: ${totalStudents}`);
   for (const [field, group] of Object.entries(studentgroups)) {
     const studentnames = group.map((student) => student.firstname).join(', ');
     console.log(`Number of students in ${field}: ${group.length}. List: ${studentnames}`);
