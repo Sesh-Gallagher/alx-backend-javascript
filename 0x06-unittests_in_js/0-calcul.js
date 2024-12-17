@@ -1,6 +1,6 @@
 /**
  * Rounds up the params and sums them up
- * paramater {number} a
+ * @paramater {number} a
  * @paramater {number} b
  */
 function calculateNumber(a, b) {
