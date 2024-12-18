@@ -1,11 +1,14 @@
 {
   "name": "unittests_in_js",
   "version": "1.0.0",
-  "description": "Unittesting in nodejs",
+  "description": "learning the basics of unittests in Node.js",
   "main": "0-calcul.js",
-  "dependencies": {},
+  "dependencies": {
+    "chai": "^5.1.2",
+    "express": "^4.21.2"
+  },
   "devDependencies": {
-    "mocha": "^6.2.3"
+    "mocha": "^11.0.1"
   },
   "scripts": {
     "test": "mocha"
