@@ -1,8 +1,8 @@
 /**
  * Test for App created
  */
-const { expect } = require('chai');
 const request = require('request');
+const { expect } = require('chai');
 
 describe('API integration test', () => {
   const API_URL = 'http://localhost:7865';
@@ -36,9 +36,8 @@ describe('API integration test', () => {
       done();
     });
   });
-});
 
-it('POST /login returns valid response', (done) => {
+  it('POST /login returns valid response', (done) => {
     request.post(`${API_URL}/login`, {json: {userName: 'Pinkbrook'}}, (_err, res, body) => {
       expect(res.statusCode).to.be.equal(200);
       expect(body).to.be.equal('Welcome Pinkbrook');
